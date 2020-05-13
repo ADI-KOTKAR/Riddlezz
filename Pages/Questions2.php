@@ -1,12 +1,8 @@
 <?php
     require_once '../Backend/auth.php';
-
-    if(!isset($_SESSION['email'])){
-        include '../Components/error.php';
-
-        return ;
-    }
-
+    
+    error_reporting(E_ERROR | E_WARNING | E_PARSE);
+    
     //JSON Parsing
     $data = file_get_contents("../Database/Questions.json");
     $data = json_decode($data,true);
@@ -77,9 +73,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FE-Quiz_Questions</title>
 </head>
-<body>
+<body style="background-image: url('../Images/puzzle.jpg');">
     <!--Header-->
     <?php include '../Components/header.php'?>
+
+    <?php
+        if(!isset($_SESSION['email'])){
+            include '../Components/error.php';
+    
+            return ;
+        }
+    ?>
 
     <!--Content-->
     <div class="card mx-5">

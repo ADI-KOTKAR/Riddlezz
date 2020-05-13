@@ -1,16 +1,3 @@
-<?php
-    error_reporting(E_ERROR | E_WARNING | E_PARSE);
-    
-    require_once '../Backend/auth.php';
-    require_once '../Backend/authLogin.php';
-
-        if(!isset($_SESSION['email'])){
-            include '../Components/error.php';
-
-            return ;
-        }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +8,19 @@
 <body>
     <!--Header-->
     <?php include '../Components/header.php'; ?>
+
+    <?php
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        
+        require_once '../Backend/auth.php';
+        require_once '../Backend/authLogin.php';
+
+            if(!isset($_SESSION['email'])){
+                include '../Components/error.php';
+
+                return ;
+            }
+    ?>
 
     <!--Content-->
     <div class="card mx-5 mt-5">

@@ -34,15 +34,15 @@ session_start();
 
   }
 </script>
-<body>
+<body style="background-image: url('../Images/puzzle.jpg');">
 
     <!--Header-->
     <?php include '../Components/header.php'?>
 
       
       <!--Login-->
-      <div class="card col-5 mx-5 my-5">
-        <h5 class="card-title">Login</h5>
+      <div class="card col-4 mx-auto my-5 bg-light">
+        <h1 class="card-title mx-auto mt-3">Login</h1>
           <!--Form-->
           <form name="LoginForm2" method="POST" onsubmit="return validateLoginForm()">
                 <!--Email-->
@@ -61,7 +61,7 @@ session_start();
                 </div>
                 
 
-                <button type="submit" id="login" value="Submit" class="btn btn-primary ml-5 mt-2 mb-5">Submit</button>
+                <button type="submit" id="login" value="Submit" class="btn btn-primary mt-2 mb-5" style="margin-left:45%">Submit</button>
                 <?php
                   if(isset($_SESSION['loginStatus2'])=='failed'){
                     print "<div class=\"alert alert-danger mx-5 \" role=\"alert\">

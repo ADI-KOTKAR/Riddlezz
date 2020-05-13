@@ -2,8 +2,7 @@
 <!--fontawesome-->
 <script src="https://kit.fontawesome.com/6d9f81a281.js" crossorigin="anonymous"></script>
 
-    <!--Header-->
-    <?php include '../Components/header.php'?>
+    
 
     <!--Error-->
     <div class="jumbotron jumbotron-fluid mx-5 my-5">
@@ -14,6 +13,9 @@
         </div>
     </div>
     <!--Error-->
+
+    <!--Footer-->
+    <?php include '../Components/footer.php'?>
 
 
 <!--Bootstrap Links-->

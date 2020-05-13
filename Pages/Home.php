@@ -12,7 +12,7 @@
   function sendOTP(){
     var emailCheck = document.forms["LoginForm"]["email"].value
     if(emailCheck == ""){
-      alert("OTP will be sent to your Email ID. Please have some patience.")
+      alert("Please enter your Email ID")
       return false
     }
 
@@ -21,7 +21,7 @@
   }
 
 </script>
-<body>
+<body style="background-image: url('../Images/puzzle.jpg');">
 
     <!--Header-->
     <?php include '../Components/header.php'?>
@@ -29,8 +29,8 @@
       <?php echo isset($_SESSION['email']); ?>
 
       <!--Login-->
-      <div class="card col-5 mx-5 my-5">
-        <h5 class="card-title">Request OTP</h5>
+      <div class="card col-4 mx-auto my-5 bg-light">
+        <h2 class="card-title mx-auto mt-3">Request OTP</h2>
           <!--Form-->
           <form name="LoginForm" method="POST" onsubmit="return sendOTP()">
               
@@ -41,7 +41,7 @@
                   <input type="text" name="email" class="form-control" placeholder="Email ID" aria-label="email" aria-describedby="basic-addon1">
                   
                 </div>
-                <button type="submit" id="requestOTP" value="Submit" class="btn btn-primary ml-5 my-2">Request OTP</button>
+                <button type="submit" id="requestOTP" value="Submit" class="btn btn-primary mt-2 mb-5" style="margin-left:40%">Request OTP</button>
           </form>
       </div>
 
