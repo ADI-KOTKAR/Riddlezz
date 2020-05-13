@@ -26,7 +26,7 @@
         updateStartTime($_SESSION['email'],$time_start);
     }
 
-    if($_SESSION['progress_count'] == 11){
+    if($_SESSION['progress_count'] == 10){
         header('location: End.php');
     }
 ?>
@@ -84,7 +84,7 @@
     <!--Content-->
     <div class="card mx-5">
         <div class="card-body row">
-            <h4 class="col-3"><?php print $user_info['email']; ?></h4>
+            <h4 class="col-4"><?php print $user_info['email']; ?></h4>
             <?php
                 $current_question = (int)$user_info['progress_count'];
                 $total_questions = (int)sizeof($data);
@@ -109,8 +109,8 @@
         $count = $_SESSION['progress_count'];
 
         print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"return submitForm()\">
-                <div class=\"card mx-5 my-5\">
-                    <h3 class=\"card-title mx-5 my-2\"> Question ".($count+1)." </h3>
+                <div class=\"card mx-auto my-5 w-50\">
+                    <h3 class=\"card-title mx-5 my-2\"> Riddle ".($count+1)." </h3>
                     <div class=\"card-body mx-4\">
                         ".$data[$count]['question']."
                     </div>
@@ -126,18 +126,7 @@
                                </div>";
                     }
                     
-        print"           <p>
-                        <button class=\"btn btn-primary mx-5\" type=\"button\" data-toggle=\"collapse\"
-                                data-target=\"#collapseExample\" aria-expanded=\"false\" 
-                                aria-controls=\"collapseExample\" id=\"hint\" onclick=\"hintSelected()\">
-                            Hint
-                        </button>
-                    </p>
-                    <div class=\"collapse mx-5 w-50\" id=\"collapseExample\">
-                        <div class=\"card card-body\">
-                            ".$data[0]['hint']."
-                        </div>
-                    </div>
+        print"           
                     <div class=\"mx-5 w-50 my-2\">
                         <button type=\"submit\" class=\"btn btn-dark\" 
                                 value=\"Submit\" id=\"submit\"> 

@@ -25,7 +25,11 @@ if(isset($_POST['email'])){
         updateOTP($_SESSION['email']);
         $_SESSION['user_info'] = fetchUser($_SESSION['email']);
 
-        header('location: ../Pages/Login.php');
+        if($userCheck['contact_no']!=''){
+            header('location: ../Pages/Login.php');
+        }else{
+            header('location: ../Pages/Register.php');
+        }
 
         return ;
     }

@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE-Quiz_Login</title>
+    <title>Riddlezz_Login</title>
 </head>
 <!--Validation-->
 
@@ -50,7 +50,7 @@ session_start();
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                   </div>
-                  <input type="text" name="email" class="form-control" placeholder="VES Email ID" aria-label="email" aria-describedby="basic-addon1">
+                  <input type="text" name="email" class="form-control" placeholder="Email ID" aria-label="email" aria-describedby="basic-addon1">
                 </div>
                 <!--OTP-->
                 <div class="input-group mb-3 mb-2 mx-5" style="width: 80%;"  >

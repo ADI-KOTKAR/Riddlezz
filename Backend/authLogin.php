@@ -26,7 +26,7 @@ if(isset($_POST['email']) && isset($_POST['otp'])){
         //var_dump($_SESSION['user_info']);
         //print_r($verifyCredentials['email']);
 
-        if($_SESSION['user_info']['contact_no'] == '' or $_SESSION['user_info']['division'] == ''){
+        if($_SESSION['user_info']['contact_no'] == ''){
             echo "Invalid Credentials";
             $_SESSION['loginStatus3'] = "failed";
 
@@ -38,7 +38,7 @@ if(isset($_POST['email']) && isset($_POST['otp'])){
         $progress = (int)$_SESSION['user_info']['progress_count'];
         echo $progress;
 
-        if($progress == 11){
+        if($progress == 10){
             header("location: ../Pages/End.php");
         }else{
             header('location: ../Pages/Rules.php');

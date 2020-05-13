@@ -1,6 +1,7 @@
 <?php
 
-require '../vendor/autoload.php';  
+require '../vendor/autoload.php';
+require 'secret_key.php';  
 
 /*
             JSON Format for user:
@@ -8,7 +9,6 @@ require '../vendor/autoload.php';
                     '_id' : '',
                     'email' : '',
                     'contact_no' : '',
-                    'division' : '',
                     'progress_count' : '',
                     'points' : '',
                     'incorrect_attempts' : '',
@@ -21,16 +21,7 @@ require '../vendor/autoload.php';
         
 */
 
-//Database Connection
-function connectDB(){
-    $client = new MongoDB\Client(
-        'mongodb+srv://ADI-KOTKAR:base1234@cluster0-vicgr.mongodb.net/test?retryWrites=true&w=majority');
-    $db = $client->ISTE_Quiz;
-    $collection = $db->user_info;
-    
-    //echo "Connected Succesfully";
-    return $collection;
-}
+connectDB();
 
 //Verify if user exists
 function verifyUser($email){
@@ -51,9 +42,8 @@ function createUser($email){
     $document = $insertOneResult = $collection->insertOne([
         'email' => $email,
         'contact_no' => '',
-        'division' => '',
         'progress_count' => 0,
-        'points' => 10,
+        'points' => 0,
         'incorrect_attempts' => 0,
         'hints_used' => '',
         'time_start' => '',
@@ -63,9 +53,9 @@ function createUser($email){
     ]);
 
     $to_email = $email;
-    $subject = 'OTP for FE_Quiz';
-    $message = 'Requested OTP: '.$otp;
-    $headers = 'From: noreply @ company . com';
+    $subject = 'OTP for Riddlezz';
+    $message = 'Requested OTP: '.$otp.'\n Enjoy solving funny Riddlezz';
+    $headers = 'From: noreply @ Riddlezz.com';
     mail($to_email,$subject,$message,$headers);
     echo "Mail sent";
 }
@@ -96,9 +86,9 @@ function updateOTP($email){
     );
 
     $to_email = $email;
-    $subject = '(R) OTP for FE_Quiz';
+    $subject = '(Registered) OTP for Riddlezz';
     $message = 'Requested OTP: '.$otp;
-    $headers = 'From: noreply @ company . com';
+    $headers = 'From: noreply @ Riddlezz.com';
     mail($to_email,$subject,$message,$headers);
     echo "Mail sent";
 
@@ -119,7 +109,7 @@ function verifyCredentials($email,$otp){
 }
 
 //Update Verification Status
-function updateVerificationStatus($email,$contact_no,$division){
+function updateVerificationStatus($email,$contact_no){
     $collection = connectDB();
 
     $updateResult = $collection->updateOne(
@@ -127,7 +117,6 @@ function updateVerificationStatus($email,$contact_no,$division){
         ['$set' => [
             'verification' => 1,
             'contact_no' => $contact_no,
-            'division' => $division
             ]
         ]
     );

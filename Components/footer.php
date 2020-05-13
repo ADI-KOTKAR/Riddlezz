@@ -8,7 +8,7 @@
     <div id="footer">
         <div class="card bg-dark fixed-bottom">
         <div class="card-body ml-auto mr-auto">
-            <p class="text-white"> &copy; Copyright: 2020 FE-Quiz</p>
+            <p class="text-white"> &copy; Copyright: 2020 Riddlezz</p>
         </div>
         </div>
     </div>

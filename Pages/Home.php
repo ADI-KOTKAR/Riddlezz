@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE-Quiz_Home</title>
+    <title>Riddlezz_Home</title>
 </head>
 <!--Validation-->
 
@@ -38,7 +38,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                   </div>
-                  <input type="text" name="email" class="form-control" placeholder="VES Email ID" aria-label="email" aria-describedby="basic-addon1">
+                  <input type="text" name="email" class="form-control" placeholder="Email ID" aria-label="email" aria-describedby="basic-addon1">
                   
                 </div>
                 <button type="submit" id="requestOTP" value="Submit" class="btn btn-primary ml-5 my-2">Request OTP</button>
