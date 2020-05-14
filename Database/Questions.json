@@ -6,8 +6,8 @@
     },
     {
         "_id" : "2",
-        "question" : "We thought her husband was the killer but he was blind and deaf and when frisked, another note was found in his pocket. It was clear until now that someone was playing with me.\r\nThe note now said  \r\n“In a mysterious case of sudden disappearance of Mr. Schlansky. A laptop is found in his office and needs to be accessed in order to get a clue about his whereabouts but it was password protected with a hint as follows:\r\n\r\nTake 4 pineapples and eat them with 4 toasts. If you don’t guess the password within the 3rd duck then, eat the 1st apricot kept to the side of 1st paper guarded by 4 tigers.\r\n\r\nFind the password.”\r\n",
-        "answer" : "escape"
+        "question" : "What has hands but cannot wear gloves, a face but cannot look?",
+        "answer" : "Clock"
     },
     {
         "_id" : "3",

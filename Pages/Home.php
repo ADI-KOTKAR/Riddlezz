@@ -25,6 +25,7 @@
       return false
     }
 
+    alert("OTP will be sent to your Email ID. Please have some patience!")
     document.forms["LoginForm"].action="../Backend/sendOTP.php"
     
   }

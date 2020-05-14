@@ -158,4 +158,35 @@ function updatePointsForAttempts($email,$attempts,$points){
     );
 }
 
+//Time conversion to format : "hh:mm:ss"
+function getHoursMinutes($seconds, $format = '%02d:%02d:%02d') {
+
+    if (empty($seconds) || ! is_numeric($seconds)) {
+        return false;
+    }
+
+    $minutes = round($seconds / 60);
+    $hours = floor($minutes / 60);
+    $remainMinutes = ($minutes % 60);
+    $remainSeconds = ($seconds % 60);
+
+    return sprintf($format, $hours, $remainMinutes, $remainSeconds);
+}
+
+//Sorting users for Leaderboard
+function sortLeaderboard(){
+    $collection = connectDB();
+
+    $cursor = $collection->aggregate([
+        ['$addFields' => [
+            'time_taken' => ['$subtract' => ['$time_end','$time_start'] ]
+        ]],
+        ['$sort' => [
+            'points' => -1,
+            'time_taken' => 1
+        ]]
+    ]);
+
+    return $cursor;
+}
 ?>

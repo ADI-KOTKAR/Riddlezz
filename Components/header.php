@@ -6,24 +6,28 @@
   <title></title>
 </head>
 <body style="background-image: url('../Images/puzzle.jpg');">
-  <!--Navbar-->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Riddlezz</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Leaderboard <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <!--fontawesome-->
+  <script src="https://kit.fontawesome.com/6d9f81a281.js" crossorigin="anonymous"></script>
+
+  <!--Navbar-->
+  <div class="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="col-9">
+        <a class="navbar-brand ml-5" href="../Backend/logout.php"> <i class="fas fa-puzzle-piece fa-1x"></i> Riddlezz</a>
+      </div>
+      <div class="collapse navbar-collapse col-1" id="navbarNav">
+        <ul class="navbar-nav mr-sm-2">
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="../Backend/logout.php">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Pages/Leaderboard.php">Leaderboard <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
 </body>
 </html>

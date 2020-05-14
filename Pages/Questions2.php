@@ -123,25 +123,25 @@
         $count = $_SESSION['progress_count'];
 
         print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"return submitForm()\">
-                <div class=\"card mx-auto my-5 w-50\">
-                    <h3 class=\"card-title mx-5 my-2\"> Riddle ".($count+1)." </h3>
-                    <div class=\"card-body mx-4\">
+                <div class=\"card mx-auto my-5 col-4\">
+                    <h2 class=\"card-title mx-auto mt-3\"> Riddle ".($count+1)." </h2>
+                    <div class=\"card-body mx-3\">
                         ".$data[$count]['question']."
                     </div>
-                    <div class=\"input-group mb-3 mx-5 w-50\">
+                    <div class=\"input-group mb-3 mx-auto w-75\">
                         <input type=\"text\" class=\"form-control\" placeholder=\"Answer\" 
                                aria-label=\"Answer\" aria-describedby=\"basic-addon1\"
                                id=\"answer\" name=\"answer\">
                     </div>";
 
                     if(isset($_SESSION['wrongAnswer'])){
-                        print "<div class=\"alert alert-danger mx-5 w-50\" role=\"alert\">
+                        print "<div class=\"alert alert-danger mx-auto w-75\" role=\"alert\">
                                     Invalid Answer! Please Try Again..
                                </div>";
                     }
                     
         print"           
-                    <div class=\"mx-5 w-50 my-2\">
+                    <div class=\"mx-auto mb-5\">
                         <button type=\"submit\" class=\"btn btn-dark\" 
                                 value=\"Submit\" id=\"submit\"> 
                             Submit
