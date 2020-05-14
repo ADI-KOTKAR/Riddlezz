@@ -1,53 +1,53 @@
 [
     {
         "_id" : "1",
-        "question" : "",
-        "answer" : ""
+        "question" : "Jeff is younger than Rodney but older than Debbie. <br>Larry is older than Erica who is older thanJeff. <br>Rodney is older than Larry. <br>Who is the middle child?",
+        "answer" : "Erica"
     },
     {
         "_id" : "2",
-        "question" : "",
-        "answer" : ""
+        "question" : "If you have me, you want to share me. If you share me, you haven't got me. What am I?",
+        "answer" : "Seccret"
     },
     {
         "_id" : "3",
-        "question" : "",
-        "answer" : ""
+        "question" : "I have lakes with no water, mountains with no stone and cities with no buildings. What am I?",
+        "answer" : "Map"
     },
     {
         "_id" : "4",
-        "question" : "",
-        "answer" : ""
+        "question" : "With pointed fangs I sit and wait; with piercing force I crunch out fate; grabbing victims,proclaiming might; physically joining with a single bite. What am I?",
+        "answer" : "Stapler"
     },
     {
         "_id" : "5",
-        "question" : "",
-        "answer" : ""
+        "question" : "If you drop me I’m sure to crack, but give me a smile and I’ll always smile back. What am I?",
+        "answer" : "Mirror"
     },
     {
         "_id" : "6",
-        "question" : "",
-        "answer" : ""
+        "question" : "I'm tall when I'm young and I'm short when I'm old. What am I?",
+        "answer" : "Candle"
     },
     {
         "_id" : "7",
-        "question" : "",
-        "answer" : ""
+        "question" : "What is as light as a feather, but even the world's strongest man couldn't hold it for more than a minute?",
+        "answer" : "Breath"
     },
     {
         "_id" : "8",
-        "question" : "",
-        "answer" : ""
+        "question" : "You are participating in the swimming finals at the Olympics. In the final few seconds of the race you narrowly pass the swimmer who was in third place. What place did you get(words)?",
+        "answer" : "Third"
     },
     {
         "_id" : "9",
-        "question" : "",
-        "answer" : ""
+        "question" : "Who makes it, has no need of it. <br>Who buys it, has no use for it. <br>Who uses it can neither see nor feel it. <br>What is it?",
+        "answer" : "Coffin"
     },
     {
         "_id" : "10",
-        "question" : "",
-        "answer" : ""
+        "question" : "What has hands but cannot wear gloves, a face but cannot look?",
+        "answer" : "Clock"
     }
     
 ]

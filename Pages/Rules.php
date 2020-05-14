@@ -37,6 +37,7 @@
         <div class="card-body">
             <ul class="list-group mb-5">
                 <li class="list-group-item list-group-item-primary text-center"><b>Total Riddles : 10</b></li>
+                <li class="list-group-item list-group-item-info text-center"><b>All answers of Riddles consists of a "single word".</b></li>
                 <li class="list-group-item list-group-item-secondary text-center"><b>Time taken for completion is considered.</b></li>
                 <li class="list-group-item list-group-item-success text-center"><b>[+10] : Correct Answer</b></li>
                 <li class="list-group-item list-group-item-danger text-center"><b>[-2] : Incorrect Attempt</b></li>

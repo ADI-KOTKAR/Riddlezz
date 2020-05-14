@@ -106,14 +106,14 @@
                 $progress = round(($current_question/$total_questions)*100);
                 $progress_percentage = $progress."%";
 
-                print"<div class=\"progress col-6 mx-5 my-auto\">
+                print"<div class=\"progress col-6 my-auto bg-secondary\">
                             <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: $progress_percentage;\" 
                                 aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">
                                 ".$progress."%
                             </div>
                     </div>";
             ?>
-            <a class="btn btn-dark col-1" href="../Backend/logout.php" role="button">Logout</a>
+            <a class="btn btn-dark ml-5 col-1" href="../Backend/logout.php" role="button">Logout</a>
         </div>
     </div>
 
@@ -123,13 +123,13 @@
         $count = $_SESSION['progress_count'];
 
         print "<form name=\"questionForm\" method=\"POST\" onsubmit=\"return submitForm()\">
-                <div class=\"card mx-auto my-5 col-4\">
-                    <h2 class=\"card-title mx-auto mt-3\"> Riddle ".($count+1)." </h2>
-                    <div class=\"card-body mx-3\">
+                <div class=\"card mx-auto my-5 col-4 bg-light \">
+                    <h2 class=\"card-title mx-auto mt-3 text-white-75\"> Riddle ".($count+1)." </h2>
+                    <div class=\"card-body mx-3 text-center text-monospace\"><h5><b>
                         ".$data[$count]['question']."
-                    </div>
+                    </b></h5></div>
                     <div class=\"input-group mb-3 mx-auto w-75\">
-                        <input type=\"text\" class=\"form-control\" placeholder=\"Answer\" 
+                        <input type=\"text\" class=\"form-control text-center\" placeholder=\"Answer\" 
                                aria-label=\"Answer\" aria-describedby=\"basic-addon1\"
                                id=\"answer\" name=\"answer\">
                     </div>";
@@ -151,7 +151,9 @@
              </form>";
         
     ?>
-        
+    
+    <!--Footer-->
+    <?php include "../Components/footer.php"; ?>
             
 </body>
 </html>

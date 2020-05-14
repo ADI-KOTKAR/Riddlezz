@@ -54,7 +54,7 @@ function createUser($email){
 
     $to_email = $email;
     $subject = 'OTP for Riddlezz';
-    $message = 'Requested OTP: '.$otp.'\n Enjoy solving funny Riddlezz';
+    $message = 'Requested OTP: '.$otp.'. Enjoy solving funny Riddlezz';
     $headers = 'From: noreply @ Riddlezz.com';
     mail($to_email,$subject,$message,$headers);
     echo "Mail sent";
@@ -87,7 +87,7 @@ function updateOTP($email){
 
     $to_email = $email;
     $subject = '(Registered) OTP for Riddlezz';
-    $message = 'Requested OTP: '.$otp;
+    $message = 'Requested OTP: '.$otp.". Have fun solving Riddles!";
     $headers = 'From: noreply @ Riddlezz.com';
     mail($to_email,$subject,$message,$headers);
     echo "Mail sent";
