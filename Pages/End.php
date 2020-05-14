@@ -19,17 +19,20 @@
     <?php include '../Components/header.php'?>
 
     <?php
-    error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
+        
+        session_start();
+
+            if(!isset($_SESSION['email'])){
+                include '../Components/error.php';
+
+                return ;
+            }
+    ?>
+
+    <?php
+        error_reporting(E_ERROR | E_WARNING | E_PARSE);
     
-    session_start();
-    require_once '../Database/Database.php';
-
-        if(!isset($_SESSION['email'])){
-            include '../Components/error.php';
-
-            return ;
-        }
-
         //fetch user_info
         ob_start();
         $user_info = fetchUser($_SESSION['email']);

@@ -22,8 +22,7 @@
     <?php
         error_reporting(E_ERROR | E_WARNING | E_PARSE);
         
-        require_once '../Backend/auth.php';
-        require_once '../Backend/authLogin.php';
+        session_start();
 
             if(!isset($_SESSION['email'])){
                 include '../Components/error.php';

@@ -20,10 +20,10 @@
     <?php include '../Components/header.php'; ?>
 
     <div class="card mx-auto my-5 w-75 bg-light">
-        <h1 class="mx-5 my-5 text-center">Leaderboard</h1>
+        <h1 class="mx-5 my-5 ">Leaderboard</h1>
         <div>
-            <table class="table table-striped mx-auto" style="width:85%">
-                <thead>
+            <table class="table table-striped mx-auto text-white table-dark" style="width:85%">
+                <thead class="thead-light">
                     <tr>
                     <th scope="col">#</th>
                     <th scope="col">Email ID</th>
