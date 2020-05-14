@@ -1,3 +1,13 @@
+<?php
+    require_once '../Database/connStatus.php';
+
+    if(!is_connected()){
+    include '../Components/internetError.php';
+
+    return ;
+    }
+?>
+
 <!--Session-->
 <?php 
 session_start();  

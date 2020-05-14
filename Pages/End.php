@@ -1,3 +1,12 @@
+<?php
+    require_once '../Database/connStatus.php';
+
+    if(!is_connected()){
+        include '../Components/internetError.php';
+
+        return ;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

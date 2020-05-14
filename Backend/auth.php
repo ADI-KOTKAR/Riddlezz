@@ -3,6 +3,13 @@
 session_start();
 
 require_once '../Database/Database.php';
+require_once '../Database/connStatus.php';
+
+    if(!is_connected()){
+        header('location: logout.php');
+
+        return ;
+    }
 
 $_SESSION['loginStatus'] = null;
 $_SESSION['loginStatus3'] = null;

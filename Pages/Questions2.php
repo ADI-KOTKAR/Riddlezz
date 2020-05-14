@@ -1,4 +1,14 @@
 <?php
+    require_once '../Database/connStatus.php';
+
+    if(!is_connected()){
+    include '../Components/internetError.php';
+
+    return ;
+    }
+?>
+
+<?php
     require_once '../Backend/auth.php';
     
     error_reporting(E_ERROR | E_WARNING | E_PARSE);

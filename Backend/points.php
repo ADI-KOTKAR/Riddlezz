@@ -2,6 +2,13 @@
     require_once '../Database/Database.php';
     require_once 'auth.php';
     require_once 'authLogin.php';
+    require_once '../Database/connStatus.php';
+
+    if(!is_connected()){
+        header('location: logout.php');
+
+        return ;
+    }
 
     //JSON Parsing
     $data = file_get_contents("../Database/Questions.json");

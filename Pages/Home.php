@@ -1,3 +1,12 @@
+<?php
+    require_once '../Database/connStatus.php';
+
+    if(!is_connected()){
+      include '../Components/internetError.php';
+
+      return ;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,8 +35,7 @@
     <!--Header-->
     <?php include '../Components/header.php'?>
 
-      <?php echo isset($_SESSION['email']); ?>
-
+      
       <!--Login-->
       <div class="card col-4 mx-auto my-5 bg-light">
         <h2 class="card-title mx-auto mt-3">Request OTP</h2>
