@@ -14,6 +14,7 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
+    <a href="https://drive.google.com/file/d/15g0_JIjkYje1F9LEfq2LU_B4-c0FWqP0/view?usp=sharing">View Demo</a>
     ·
     <a href="https://github.com/ADI-KOTKAR/Riddlezz.git/issues">Report Bug</a>
     ·
