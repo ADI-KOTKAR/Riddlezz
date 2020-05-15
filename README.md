@@ -16,7 +16,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/app_64.png" alt="Logo" width="80" height="80">
+    <img src="" alt="" width="80" height="80">
   </a>
 
   <h2 align="center">Riddlezz</h2>
@@ -36,9 +36,7 @@
 </p>
 
 
-<p align="center">
-  <img width="640" height="331" src="https://user-images.githubusercontent.com/49261633/80869362-ab5e1a00-8cbd-11ea-989a-f1df198f49c9.gif">
-</p>
+
 
 <!-- TABLE OF CONTENTS -->
 
