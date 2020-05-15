@@ -1,13 +1,5 @@
 
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Language][Language-shield]][Language-url]
-[![Activity][activity-shield]][activity-url]
-[![Version][version-shield]][version-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
 
 
@@ -58,7 +50,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![image](https://user-images.githubusercontent.com/49261633/80867197-6e3f5b00-8cb0-11ea-8e62-b9ddb2ea6533.png)
+![image](https://drive.google.com/open?id=1r4TlwfQKvZCWyL1-eSqyT6GoFNeHkVFA)
 
 
 There are many great PHP websites available on GitHub, however, there are very few which explore new, fast and latest cloud databases like MongoDB Atlas. This is a simple website which is a result of Project assigned to me for my PHP Certification, so I tried my best to try something different and use all basic functionalities of PHP.
