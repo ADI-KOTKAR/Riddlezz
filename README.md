@@ -10,6 +10,7 @@
   <p align="center">
     Website using PHP with MongoDB Database and deployment on Heroku
     <br />
+    Visite hosted website : https://bit.ly/ADI-KOTKAR_Riddlez <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -199,37 +200,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Contact Developer - [Mail](developer.adi.kotkar@gmail.com) - developer.adi.kotkar@gmail.com
 
 Project Link: [https://github.com/ADI-KOTKAR/Riddlezz.git](https://github.com/ADI-KOTKAR/Riddlezz.git)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ADI-KOTKAR/Riddlezz
-[contributors-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/graphs/contributors
-[activity-shield]: https://img.shields.io/github/commit-activity/m/ADI-KOTKAR/Riddlezz
-[activity-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/commits/master
-[version-shield]: https://img.shields.io/github/v/tag/ADI-KOTKAR/Riddlezz
-[version-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/releases
-[language-shield]: https://img.shields.io/github/languages/top/ADI-KOTKAR/Riddlezz
-[language-url]: https://www.php.net/
-[forks-shield]: https://img.shields.io/github/forks/ADI-KOTKAR/Riddlezz
-[forks-url]:https://github.com/ADI-KOTKAR/Riddlezz.git/network/members
-[stars-shield]: 	https://img.shields.io/github/stars/ADI-KOTKAR/Riddlezz
-[stars-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ADI-KOTKAR/Riddlezz
-[issues-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/issues
-[license-shield]: https://img.shields.io/github/license/ADI-KOTKAR/Riddlezz
-[license-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/blob/master/LICENSE
 
 
