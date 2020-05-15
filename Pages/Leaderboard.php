@@ -19,9 +19,9 @@
     <!--Header-->
     <?php include '../Components/header.php'; ?>
 
-    <div class="card mx-auto my-5 w-75 bg-light">
+    <div class="card mx-auto mt-5 w-75 bg-light" style="margin-bottom:10%">
         <h1 class="mx-5 my-5 ">Leaderboard</h1>
-        <div>
+        <div style="overflow:scroll;">
             <table class="table table-striped mx-auto text-white table-dark" style="width:85%">
                 <thead class="thead-light">
                     <tr>
@@ -41,6 +41,7 @@
                         
                         foreach ($cursor as $state) {
                             $time_taken = $state['time_end'] - $state['time_start'];
+                            $i++;
 
                             if($time_taken == 0){
                                 print"<tr>
@@ -51,7 +52,6 @@
                                 </tr>";
                             }else{
                                 $time =  getHoursMinutes($time_taken);
-                                $i++;
     
                                 print"<tr>
                                         <th scope=\"row\">$i</th>
