@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -28,8 +22,10 @@
 
 
 
-
 <!-- TABLE OF CONTENTS -->
+<p align="center">
+  <img width="640" height="331" src="https://i.ibb.co/h7cgkdF/riddlezz-1.png">
+</p>
 
 
 ## Table of Contents
