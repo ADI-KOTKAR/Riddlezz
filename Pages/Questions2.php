@@ -81,7 +81,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE-Quiz_Questions</title>
+    <title>Riddlezz_Questions</title>
 </head>
 <body style="background-image: url('../Images/puzzle.jpg');">
     <!--Header-->

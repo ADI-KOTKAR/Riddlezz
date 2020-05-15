@@ -13,7 +13,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE-Quiz_Rules</title>
+    <title>Riddlezz_Rules</title>
 </head>
 <body>
     <!--Header-->
