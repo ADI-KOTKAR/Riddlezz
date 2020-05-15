@@ -50,7 +50,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![image](https://drive.google.com/open?id=1r4TlwfQKvZCWyL1-eSqyT6GoFNeHkVFA)
+![image](https://drive.google.com/file/d/1r4TlwfQKvZCWyL1-eSqyT6GoFNeHkVFA/view)
 
 
 There are many great PHP websites available on GitHub, however, there are very few which explore new, fast and latest cloud databases like MongoDB Atlas. This is a simple website which is a result of Project assigned to me for my PHP Certification, so I tried my best to try something different and use all basic functionalities of PHP.
