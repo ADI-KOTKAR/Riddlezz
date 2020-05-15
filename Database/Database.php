@@ -2,6 +2,7 @@
 
 require '../vendor/autoload.php';
 require 'secret_key.php';  
+require '../PHPMailer/index.php';
 
 /*
             JSON Format for user:
@@ -85,12 +86,14 @@ function updateOTP($email){
         ['$set' => ['otp' => $otp]]
     );
 
-    $to_email = $email;
-    $subject = '(Registered) OTP for Riddlezz';
-    $message = 'Requested OTP: '.$otp.". Have fun solving Riddles!";
-    $headers = 'From: noreply @ Riddlezz.com';
-    mail($to_email,$subject,$message,$headers);
-    echo "Mail sent";
+    // $to_email = $email;
+    // $subject = '(Registered) OTP for Riddlezz';
+    // $message = 'Requested OTP: '.$otp.". Have fun solving Riddles!";
+    // $headers = 'From: noreply @ Riddlezz.com';
+    // mail($to_email,$subject,$message,$headers);
+    // echo "Mail sent";
+
+    mailUser($email,$otp);
 
 }
 
