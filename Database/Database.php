@@ -53,12 +53,15 @@ function createUser($email){
         'verification' => 0
     ]);
 
-    $to_email = $email;
-    $subject = 'OTP for Riddlezz';
-    $message = 'Requested OTP: '.$otp.'. Enjoy solving funny Riddlezz';
-    $headers = 'From: noreply @ Riddlezz.com';
-    mail($to_email,$subject,$message,$headers);
-    echo "Mail sent";
+    // $to_email = $email;
+    // $subject = 'OTP for Riddlezz';
+    // $message = 'Requested OTP: '.$otp.'. Enjoy solving funny Riddlezz';
+    // $headers = 'From: noreply @ Riddlezz.com';
+    // mail($to_email,$subject,$message,$headers);
+    // echo "Mail sent";
+
+    mailUser($email,$otp);
+
 }
 
 //To generate 4 digit OTP
@@ -93,7 +96,7 @@ function updateOTP($email){
     // mail($to_email,$subject,$message,$headers);
     // echo "Mail sent";
 
-    mailUser($email,$otp);
+    mailUserRegistered($email,$otp);
 
 }
 
