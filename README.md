@@ -75,22 +75,21 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ### Built With
 
-I am only listing the main things which are needed for this project:
+I am listing the main things which are needed for this project:
 
 * [PHP](https://www.php.net/)
 * [MongoDB with PHP](https://docs.mongodb.com/drivers/php)
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-* [PHPMailer Docs](https://github.com/PHPMailer/PHPMailer)
-* [PHPMailer](https://youtu.be/maYnD0Sdr7c)
+* [PHPMailer](https://github.com/PHPMailer/PHPMailer)
+* [Heroku](https://dashboard.heroku.com/)
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
 First of all you will need a database of your own which should be created in MongoDB Atlas , I created out cloud-database so that handling of data can be done in JSON format and high secuirity of database.
-This the Database structure.
 
-Create a free cluster in MongoDB Atlas with your account, configure all stuff like network access, database access, and create a database with collection by following names:
+Create a free cluster in MongoDB Atlas with your account, configure all stuff like network access, database access, and create a database with collection by following structure:
 
 Database : Riddlezz
 Collection : user_info 
@@ -173,7 +172,12 @@ extension=php_mongodb.dll
 
 ?>
 ```
-8. You are ready to go!
+8. In PHPMailer/index.php do the following changes mentioned in comments. 
+9. Till here your website is ready for localhost, now lets move on hosting:
+    * I have used Heroku platform for hosting, just create an account and an app with PHP environment.
+    * We are basically hosting our github repo on Heroku with automated deployment ie. whenever I commit changes    in my repo, it will automatically affect changes on my website. 
+    * Refer: https://youtu.be/zavb4WG8x-8
+10. You are ready to go!!!
 
 
 <!-- ROADMAP -->
