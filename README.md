@@ -19,7 +19,6 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://drive.google.com/file/d/1TG90kIOGDsKfBk17zwHMx9bT8tkDvgGx/view?usp=sharing">View Demo</a>
     ·
     <a href="https://github.com/ADI-KOTKAR/Riddlezz.git/issues">Report Bug</a>
     ·
@@ -50,7 +49,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![image](https://drive.google.com/file/d/1r4TlwfQKvZCWyL1-eSqyT6GoFNeHkVFA/view)
 
 
 There are many great PHP websites available on GitHub, however, there are very few which explore new, fast and latest cloud databases like MongoDB Atlas. This is a simple website which is a result of Project assigned to me for my PHP Certification, so I tried my best to try something different and use all basic functionalities of PHP.
