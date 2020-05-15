@@ -130,7 +130,7 @@
                     </b></h5></div>
                     <div class=\"input-group mb-3 mx-auto w-75\">
                         <input type=\"text\" class=\"form-control text-center\" placeholder=\"Answer\" 
-                               aria-label=\"Answer\" aria-describedby=\"basic-addon1\"
+                               aria-label=\"Answer\" aria-describedby=\"basic-addon1\" autoComplete=\"off\"
                                id=\"answer\" name=\"answer\">
                     </div>";
 

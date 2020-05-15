@@ -41,15 +41,26 @@
                         
                         foreach ($cursor as $state) {
                             $time_taken = $state['time_end'] - $state['time_start'];
-                            $time =  getHoursMinutes($time_taken);
-                            $i++;
 
-                            print"<tr>
+                            if($time_taken == 0){
+                                print"<tr>
                                     <th scope=\"row\">$i</th>
                                     <td>".$state['email']."</td>
                                     <td>".$state['points']."</td>
-                                    <td>".$time."</td>
+                                    <td> NA  </td>
                                 </tr>";
+                            }else{
+                                $time =  getHoursMinutes($time_taken);
+                                $i++;
+    
+                                print"<tr>
+                                        <th scope=\"row\">$i</th>
+                                        <td>".$state['email']."</td>
+                                        <td>".$state['points']."</td>
+                                        <td>".$time."</td>
+                                    </tr>";
+                            }
+
                         }
                     
                     ?>

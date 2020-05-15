@@ -13,17 +13,26 @@
   <!--Navbar-->
   <div class="">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="col-9">
+      <div class="col-8">
         <a class="navbar-brand ml-5" href="../Backend/logout.php"> <i class="fas fa-puzzle-piece fa-1x"></i> Riddlezz</a>
       </div>
       <div class="collapse navbar-collapse col-1" id="navbarNav">
         <ul class="navbar-nav mr-sm-2">
           <li class="nav-item mr-4">
-            <a class="nav-link" href="../Backend/logout.php">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../Pages/Home.php">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link" href="../Pages/Leaderboard.php">Leaderboard <span class="sr-only">(current)</span></a>
           </li>
+          <?php
+              error_reporting(E_ERROR | E_WARNING | E_PARSE);
+              session_start();
+              if(isset($_SESSION['email'])){
+                  print"<li class=\"nav-item\">
+                          <a class=\"nav-link\" href=\"../Backend/logout.php\">Logout<span class=\"sr-only\">(current)</span></a>
+                        </li>";
+              }
+          ?>
         </ul>
       </div>
     </nav>

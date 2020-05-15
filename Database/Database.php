@@ -46,8 +46,8 @@ function createUser($email){
         'points' => 0,
         'incorrect_attempts' => 0,
         'hints_used' => '',
-        'time_start' => '',
-        'time_end' => '',
+        'time_start' => 0,
+        'time_end' => 0,
         'otp' => (int)$otp,
         'verification' => 0
     ]);
@@ -161,7 +161,7 @@ function updatePointsForAttempts($email,$attempts,$points){
 //Time conversion to format : "hh:mm:ss"
 function getHoursMinutes($seconds, $format = '%02d:%02d:%02d') {
 
-    if (empty($seconds) || ! is_numeric($seconds)) {
+    if (empty($seconds) || ! is_numeric($seconds )) {
         return false;
     }
 
@@ -171,6 +171,7 @@ function getHoursMinutes($seconds, $format = '%02d:%02d:%02d') {
     $remainSeconds = ($seconds % 60);
 
     return sprintf($format, $hours, $remainMinutes, $remainSeconds);
+
 }
 
 //Sorting users for Leaderboard

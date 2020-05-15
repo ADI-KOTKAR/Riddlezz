@@ -36,7 +36,17 @@
     <!--Header-->
     <?php include '../Components/header.php'?>
 
-      
+      <?php
+          error_reporting(E_ERROR | E_WARNING | E_PARSE);
+          
+          session_start();
+
+          if(isset($_SESSION['email'])){
+              include '../Components/session.php';
+
+              return ;
+          }
+      ?>
       <!--Login-->
       <div class="card col-4 mx-auto my-5 bg-light">
         <h2 class="card-title mx-auto mt-3">Request OTP</h2>
@@ -47,7 +57,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                   </div>
-                  <input type="text" name="email" class="form-control" placeholder="Email ID" aria-label="email" aria-describedby="basic-addon1">
+                  <input autocomplete="off" type="email" required name="email" class="form-control" placeholder="Email ID" aria-label="email" aria-describedby="basic-addon1">
                   
                 </div>
                 <button type="submit" id="requestOTP" value="Submit" class="btn btn-primary mt-2 mb-5" style="margin-left:40%">Request OTP</button>

@@ -60,14 +60,14 @@ session_start();
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                   </div>
-                  <input type="text" name="email" class="form-control" placeholder="Email ID" aria-label="email" aria-describedby="basic-addon1">
+                  <input autocomplete="off" type="email" required name="email" class="form-control" placeholder="Email ID" aria-label="email" aria-describedby="basic-addon1">
                 </div>
                 <!--OTP-->
                 <div class="input-group mb-3 mb-2 mx-5" style="width: 80%;"  >
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">@</span>
                   </div>
-                  <input id="OTPinput" type="text" name="otp" class="form-control" placeholder="OTP" aria-label="otp" aria-describedby="basic-addon1">
+                  <input autocomplete="off" id="OTPinput" type="tel" pattern="[0-9]{4}" required name="otp" class="form-control" placeholder="OTP" aria-label="otp" aria-describedby="basic-addon1">
                 </div>
                 
 
