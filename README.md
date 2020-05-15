@@ -232,21 +232,21 @@ Project Link: [https://github.com/ADI-KOTKAR/Riddlezz.git](https://github.com/AD
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Srajan1122/TK-Player
+[contributors-shield]: https://img.shields.io/github/contributors/ADI-KOTKAR/Riddlezz
 [contributors-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/graphs/contributors
-[activity-shield]: https://img.shields.io/github/commit-activity/m/Srajan1122/Tk-Player
+[activity-shield]: https://img.shields.io/github/commit-activity/m/ADI-KOTKAR/Riddlezz
 [activity-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/commits/master
-[version-shield]: https://img.shields.io/github/v/tag/Srajan1122/Tk-Player
+[version-shield]: https://img.shields.io/github/v/tag/ADI-KOTKAR/Riddlezz
 [version-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/releases
-[language-shield]: https://img.shields.io/github/languages/top/Srajan1122/TK-Player
+[language-shield]: https://img.shields.io/github/languages/top/ADI-KOTKAR/Riddlezz
 [language-url]: https://www.python.org/
-[forks-shield]: https://img.shields.io/github/forks/Srajan1122/TK-Player
+[forks-shield]: https://img.shields.io/github/forks/ADI-KOTKAR/Riddlezz
 [forks-url]:https://github.com/ADI-KOTKAR/Riddlezz.git/network/members
-[stars-shield]: 	https://img.shields.io/github/stars/Srajan1122/TK-Player
+[stars-shield]: 	https://img.shields.io/github/stars/ADI-KOTKAR/Riddlezz
 [stars-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Srajan1122/TK-Player
+[issues-shield]: https://img.shields.io/github/issues/ADI-KOTKAR/Riddlezz
 [issues-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/issues
-[license-shield]: https://img.shields.io/github/license/Srajan1122/TK-Player
+[license-shield]: https://img.shields.io/github/license/ADI-KOTKAR/Riddlezz
 [license-url]: https://github.com/ADI-KOTKAR/Riddlezz.git/blob/master/LICENSE
 
 
